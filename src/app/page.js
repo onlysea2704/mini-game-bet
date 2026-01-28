@@ -33,7 +33,7 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white font-sans selection:bg-purple-500 selection:text-white pb-10">
+    <div className="min-h-screen bg-slate-900 text-white selection:bg-purple-500 selection:text-white pb-10">
       
       {/* Header with Glow Effect */}
       <div className="relative pt-10 pb-6 text-center">
