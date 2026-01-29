@@ -40,8 +40,8 @@ export async function GET() {
     // Tính tỷ lệ phần trăm tiền cược (để vẽ thanh Progress bar ở Frontend)
     const percentA = totalPool === 0 ? 50 : Math.round((poolA / totalPool) * 100);
 
-    const currentOddsA = poolA === 0 ? 1.8 : max((totalPool / poolA) * 0.85,1.8);
-    const currentOddsB = poolB === 0 ? 1.8 : max((totalPool / poolB) * 0.85,1.8);
+    const currentOddsA = poolA === 0 ? 1.8 : Math.max((totalPool / poolA) * 0.85,1.8);
+    const currentOddsB = poolB === 0 ? 1.8 : Math.max((totalPool / poolB) * 0.85,1.8);
 
     return NextResponse.json({ 
       history: history.reverse(), 
